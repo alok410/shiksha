@@ -50,7 +50,7 @@ export default function Login() {
           Welcome Back to ShikshaMitra
         </h1>
         <p className="text-lg text-gray-200 max-w-[80%] mt-8">
-  {`Log in to access your account and manage your Education with ease. Experience the future with ShikshaMitra's smart solutions.`}
+  Log in to access your account and manage your Education with ease. Experience the future with ShikshaMitra&apos;s smart solutions.
 </p>
 
 
