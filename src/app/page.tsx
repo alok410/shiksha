@@ -78,20 +78,8 @@ export default function Home() {
     { month: "May", growth: 70 },
   ]);
 
-  const cardStyle = {
-    background: "#fff",
-    boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
-    padding: "16px",
-    borderRadius: "12px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginBottom: "16px"
-  };
-  const iconStyle = {
-    fontSize: "24px",
-    marginRight: "12px"
-  };
+
+ 
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -220,7 +208,7 @@ export default function Home() {
     );
   };
 
-  const { ref: heroRef, inView: heroInView } = useInView({
+  const { } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
