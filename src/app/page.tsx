@@ -5,9 +5,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import AnimatedFeatures from "@/components/AnimatedFeatures";
-import PricingCalculator from "@/components/PricingCalculator";
-import PartnersShowcase from "@/components/PartnersShowcase";
+
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 const CircularProgress = ({ percentage }) => {
@@ -609,8 +607,9 @@ export default function Home() {
             Voices from Our Learning Community
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Don't just take our word for it. Here's what our valued Learners have to say about ShikshaMitra.
-            </p>
+  Don&apos;t just take our word for it. Here&apos;s what our valued Learners have to say about ShikshaMitra.
+</p>
+
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -628,8 +627,9 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                ShikshaMitra has greatly enhanced my children's learning with personalized support and real-time progress tracking.
-              </p>
+  ShikshaMitra has greatly enhanced my children&apos;s learning with personalized support and real-time progress tracking.
+</p>
+
             </div>
 
             {/* Testimonial 2 */}
