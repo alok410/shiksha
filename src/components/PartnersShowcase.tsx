@@ -89,8 +89,9 @@ export default function PartnersShowcase() {
             Our Trusted Partners
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We collaborate with the world's leading logistics providers to ensure reliable delivery
-          </p>
+  We collaborate with the world&apos;s leading logistics providers to ensure reliable delivery
+</p>
+
         </motion.div>
 
         <motion.div

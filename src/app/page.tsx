@@ -8,7 +8,11 @@ import { useInView } from "react-intersection-observer";
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-const CircularProgress = ({ percentage }) => {
+interface CircularProgressProps {
+  percentage: number;
+}
+
+const CircularProgress: React.FC<CircularProgressProps> = ({ percentage }) => {
   const radius = 40;
   const circumference = 2 * Math.PI * radius;
   const strokeDashoffset = circumference - (percentage / 100) * circumference;
@@ -35,10 +39,13 @@ const CircularProgress = ({ percentage }) => {
         strokeLinecap="round"
         transform="rotate(-90 50 50)"
       />
-      <text x="50" y="55" textAnchor="middle" fontSize="16" fontWeight="bold">{percentage}%</text>
+      <text x="50" y="55" textAnchor="middle" fontSize="16" fontWeight="bold">
+        {percentage}%
+      </text>
     </svg>
   );
 };
+
 export default function Home() {
   const listStyle = {
     background: "#f9f9f9",
@@ -48,7 +55,6 @@ export default function Home() {
     fontSize: "16px",
     fontWeight: "bold",
     color: "#333",
-    textAlign: "center"
   };
 
   const topics = [
@@ -60,7 +66,8 @@ export default function Home() {
     "Computer Science - Basic Programming",
     "Physics - Forces and Motion"
   ];
-  const selectedTopics  = [
+
+  const selectedTopics = [
     "Mathematics - Algebra",
     "Science - Ecosystems",
     "History - Ancient Civilizations",
@@ -77,10 +84,6 @@ export default function Home() {
     { month: "Apr", growth: 50 },
     { month: "May", growth: 70 },
   ]);
-
-
- 
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
